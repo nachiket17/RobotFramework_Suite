@@ -48,6 +48,16 @@ TC_004_LoginTest_Variable
     Log    Test Completed
     Log    This was executed by %{username} on %{os} system
     
+TC_005
+    TC_002_SeleniumTest
+    Open Browser    https://google.com    chrome
+    Set Browser Implicit Wait    5
+    Input Text    name=q    robotframework
+    Click Button    name=btnK   
+    Set Browser Implicit Wait    5   
+    Close Browser
+    Log    Test Completed
+    
 *** Keywords ***
 Login_KW
     Input Text    id=txtUsername    ${USRID}
