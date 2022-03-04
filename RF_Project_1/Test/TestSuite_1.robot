@@ -49,7 +49,6 @@ TC_004_LoginTest_Variable
     Log    This was executed by %{username} on %{os} system
     
 TC_005
-    TC_002_SeleniumTest
     Open Browser    https://google.com    chrome
     Set Browser Implicit Wait    5
     Input Text    name=q    robotframework
